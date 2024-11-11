@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'W6';
+    src: url('../fonts/DFGirl-W6-WIN-BF.woff2') format('woff2'),
+        url('../fonts/DFGirl-W6-WIN-BF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html * {
+    font-family: W6, sans-serif;
+}
+
+
+body {
+    background-image: url('../images/background.jpg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    /* background-repeat: no-repeat; */
+    height: 100vh; /* Ensure the body covers the full height of the viewport */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1600px; /* Optional: Set a maximum width for the container */
+}
+
+h1 {
+    text-align: center; /* Center the heading */
+}
+
+#product-container {
+    margin-bottom: 20px; /* Space below the product container */
+}
+
+#coins-container {
+    padding-bottom: 20px;
+}
+
+.card {
+    height: 200px;
+}
+
+.card-title {
+    text-align: center;
+    margin-bottom: 0 !important;
+}
+
+/* Ensure the quantity control section spans the full width of the card */
+.quantity-control {
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card-body {
+    padding: 0 10px !important;
+}
+.card-img {
+    object-fit: cover; /* Ensures the image covers the area */
+    height: 200px; /* Fixed height */
+    width: 100%; /* Full width */
+    overflow: hidden; /* Hides overflow */
+    border-radius: 0 !important;
+}
+
+.image-container {
+    position: relative; /* Positioning for child elements */
+    height: 200px; /* Fixed height for the image container */
+    overflow: hidden; /* Hides overflow */
+}
+
+.image-container img {
+    position: absolute; /* Positioning for centering */
+    top: 50%; /* Centering vertically */
+    left: 50%; /* Centering horizontally */
+    transform: translate(-50%, -50%); /* Adjusting the position */
+    min-width: 100%; /* Ensures the image covers the container */
+    min-height: 100%; /* Ensures the image covers the container */
+}
